@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
+  get 'recipes/index'
+
+  get 'recipes_controller/index'
+
   get 'courses/index'
 
   get 'greeter/hello'
+  
+  root 'recipes#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
